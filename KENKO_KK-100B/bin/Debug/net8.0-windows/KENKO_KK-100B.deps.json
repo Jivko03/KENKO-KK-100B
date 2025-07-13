@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "KENKO_KK-100B/1.0.0": {
+        "runtime": {
+          "KENKO_KK-100B.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "KENKO_KK-100B/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

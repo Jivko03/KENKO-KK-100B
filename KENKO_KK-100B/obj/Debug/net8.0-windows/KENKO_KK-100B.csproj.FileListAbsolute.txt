@@ -1,0 +1,17 @@
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\bin\Debug\net8.0-windows\KENKO_KK-100B.exe
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\bin\Debug\net8.0-windows\KENKO_KK-100B.deps.json
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\bin\Debug\net8.0-windows\KENKO_KK-100B.runtimeconfig.json
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\bin\Debug\net8.0-windows\KENKO_KK-100B.dll
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\bin\Debug\net8.0-windows\KENKO_KK-100B.pdb
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK_100B.Form1.resources
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.csproj.GenerateResource.cache
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.AssemblyInfoInputs.cache
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.AssemblyInfo.cs
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.csproj.CoreCompileInputs.cache
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.dll
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\refint\KENKO_KK-100B.dll
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.pdb
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK-100B.genruntimeconfig.cache
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\ref\KENKO_KK-100B.dll
+C:\Users\Tamuring\Desktop\Prod\KENKO_KK-100B\obj\Debug\net8.0-windows\KENKO_KK_100B.Properties.Resources.resources
