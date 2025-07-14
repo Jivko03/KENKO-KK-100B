@@ -121,6 +121,7 @@
             button4.TabIndex = 3;
             button4.Text = "→";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -353,6 +354,7 @@
             button21.TabIndex = 20;
             button21.Text = "%";
             button21.UseVisualStyleBackColor = false;
+            button21.Click += button21_Click;
             // 
             // button22
             // 
@@ -366,6 +368,7 @@
             button22.TabIndex = 21;
             button22.Text = "√";
             button22.UseVisualStyleBackColor = false;
+            button22.Click += button22_Click;
             // 
             // button23
             // 
@@ -379,6 +382,7 @@
             button23.TabIndex = 22;
             button23.Text = "X";
             button23.UseVisualStyleBackColor = false;
+            button23.Click += button23_Click;
             // 
             // button24
             // 
@@ -392,6 +396,7 @@
             button24.TabIndex = 23;
             button24.Text = "/";
             button24.UseVisualStyleBackColor = false;
+            button24.Click += button24_Click;
             // 
             // button25
             // 
@@ -419,6 +424,7 @@
             button26.TabIndex = 25;
             button26.Text = "-";
             button26.UseVisualStyleBackColor = false;
+            button26.Click += button26_Click;
             // 
             // button27
             // 

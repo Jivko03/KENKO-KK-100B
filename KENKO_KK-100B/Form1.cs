@@ -237,12 +237,79 @@ namespace KENKO_KK_100B
                 FirstNumber = Result;
             }
             // Similar code for subtraction, multiplication, and divisio
+            if (Operation == "*")
+            {
+                Result = (FirstNumber * SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "%")
+            {
+                Result = (FirstNumber % SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "/")
+            {
+                Result = (FirstNumber / SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
+            if (Operation == "-")
+            {
+                Result = (FirstNumber - SecondNumber);
+                textBox1.Text = Convert.ToString(Result);
+                FirstNumber = Result;
+            }
             //}
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "*";
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "%";
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            double Result;
+            Result = (Math.Sqrt(FirstNumber));
+            textBox1.Text = Convert.ToString(Result);
+            FirstNumber = Result;
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "/";
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            FirstNumber = Convert.ToDouble(textBox1.Text);
+            textBox1.Text = "0";
+            Operation = "-";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
         }
     }
 }
