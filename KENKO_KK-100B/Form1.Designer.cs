@@ -67,6 +67,7 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
+            label10 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -134,6 +135,7 @@
             button5.TabIndex = 4;
             button5.Text = "MRC";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -328,6 +330,7 @@
             button19.TabIndex = 18;
             button19.Text = "M+";
             button19.UseVisualStyleBackColor = false;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -341,6 +344,7 @@
             button20.TabIndex = 19;
             button20.Text = "GT";
             button20.UseVisualStyleBackColor = false;
+            button20.Click += button20_Click;
             // 
             // button21
             // 
@@ -446,6 +450,7 @@
             textBox1.Location = new Point(32, 90);
             textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
+            textBox1.ReadOnly = true;
             textBox1.Size = new Size(482, 93);
             textBox1.TabIndex = 27;
             textBox1.Text = "0";
@@ -580,12 +585,28 @@
             label9.TabIndex = 38;
             label9.Text = "DIGIT";
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.BackColor = Color.Black;
+            label10.ForeColor = SystemColors.ButtonFace;
+            label10.Location = new Point(498, 166);
+            label10.Name = "label10";
+            label10.RightToLeft = RightToLeft.No;
+            label10.Size = new Size(15, 15);
+            label10.TabIndex = 39;
+            label10.Text = "=";
+            label10.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = Color.Silver;
-            ClientSize = new Size(552, 595);
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(552, 589);
+            Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -625,9 +646,9 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
-            Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -673,5 +694,6 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Label label10;
     }
 }

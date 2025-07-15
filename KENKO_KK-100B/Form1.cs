@@ -1,3 +1,5 @@
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
 namespace KENKO_KK_100B
 {
     public partial class Form1 : Form
@@ -10,6 +12,12 @@ namespace KENKO_KK_100B
         bool calulatorIsON = false;
         double FirstNumber;
         string Operation;
+        double MRC = 0;
+        double Mp;
+        double Mm;
+        string memory;
+        double GT;
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -17,7 +25,19 @@ namespace KENKO_KK_100B
 
         private void button18_Click(object sender, EventArgs e)
         {
-
+            
+            label10.Visible = false;
+            if (textBox1.Text.Length < 13)
+            {
+                if (textBox1.Text == "." && textBox1.Text != null)
+                {
+                    textBox1.Text = "";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + ".";
+                }
+            }
         }
 
         private void button28_Click(object sender, EventArgs e)
@@ -30,27 +50,34 @@ namespace KENKO_KK_100B
             //while (calulatorIsON == true)
             // {
             textBox1.Text = "0";
+            label10.Visible = false;
             // }
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            //  while (calulatorIsON == true)
-            // {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "0";
+                //  while (calulatorIsON == true)
+                // {
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "0";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "00";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "00";
-            }
-            // }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             calulatorIsON = true;
+            label10.Visible = false;
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -60,161 +87,221 @@ namespace KENKO_KK_100B
 
         private void button0_Click(object sender, EventArgs e)
         {
-            // while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "0";
+                label10.Visible = false;
+                // while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "0";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "0";
+                }
+                //}
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "0";
-            }
-            //}
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            // {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            
+            label10.Visible = false;
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "1";
+                //while (calulatorIsON == true)
+                // {
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "1";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "1";
+                }
+                //}
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "1";
-            }
-            //}
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            // while (calulatorIsON == true)
-            // {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "2";
+                label10.Visible = false;
+                // while (calulatorIsON == true)
+                // {
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "2";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "2";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "2";
-            }
-            // }
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            // {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "3";
+                label10.Visible = false;
+                //while (calulatorIsON == true)
+                // {
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "3";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "3";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "3";
-            }
-            // }
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            // while (calulatorIsON == true)
-            // {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "4";
+                label10.Visible = false;
+                // while (calulatorIsON == true)
+                // {
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "4";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "4";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "4";
-            }
-            // }
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            // while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "5";
+                label10.Visible = false;
+                // while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "5";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "5";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "5";
-            }
-            // }
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "6";
+                label10.Visible = false;
+                //while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "6";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "6";
+                }
+                //}
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "6";
-            }
-            //}
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "7";
+                label10.Visible = false;
+                //while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "7";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "7";
+                }
+                // }
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "7";
-            }
-            // }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            label10.Visible = false;
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "8";
+                label10.Visible = false;
+                //while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "8";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "8";
+                }
+                //}
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "8";
-            }
-            //}
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            //while (calulatorIsON == true)
-            //{
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            
+            if (textBox1.Text.Length < 13)
             {
-                textBox1.Text = "9";
+                label10.Visible = false;
+                //while (calulatorIsON == true)
+                //{
+                if (textBox1.Text == "0" && textBox1.Text != null)
+                {
+                    textBox1.Text = "9";
+                }
+                else
+                {
+                    textBox1.Text = textBox1.Text + "9";
+                }
+                //}
             }
-            else
-            {
-                textBox1.Text = textBox1.Text + "9";
-            }
-            //}
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             calulatorIsON = false;
+            label10.Visible = false;
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
+            label10.Visible = false;
             //while (calulatorIsON == true)
             //{
             FirstNumber = Convert.ToDouble(textBox1.Text);
@@ -227,50 +314,60 @@ namespace KENKO_KK_100B
         {
             //while (calulatorIsON == true)
             //{
+            label10.Visible = false;
             double SecondNumber;
             double Result;
             SecondNumber = Convert.ToDouble(textBox1.Text);
             if (Operation == "+")
             {
                 Result = (FirstNumber + SecondNumber);
+                GT += Result;
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                FirstNumber = Math.Round(Result, 12);
+
             }
             // Similar code for subtraction, multiplication, and divisio
             if (Operation == "*")
             {
-                Result = (FirstNumber * SecondNumber);
-                textBox1.Text = Convert.ToString(Result);
+                Result = Math.Round(FirstNumber * SecondNumber, 12);
+                GT += Result;
+                textBox1.Text = Convert.ToString(Math.Round(Result, 12));
                 FirstNumber = Result;
             }
             if (Operation == "%")
             {
                 Result = (FirstNumber % SecondNumber);
+                GT += Result;
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                FirstNumber = Math.Round(Result, 12);
             }
             if (Operation == "/")
             {
                 Result = (FirstNumber / SecondNumber);
+                GT += Result;
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                FirstNumber = Math.Round(Result, 12);
             }
             if (Operation == "-")
             {
                 Result = (FirstNumber - SecondNumber);
+                GT += Result;
                 textBox1.Text = Convert.ToString(Result);
-                FirstNumber = Result;
+                FirstNumber = Math.Round(Result, 12);
             }
             //}
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            Mm = Convert.ToDouble(textBox1.Text);
+            MRC -= Mm;
+            label10.Visible = true;
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
+            label10.Visible = false;
             FirstNumber = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "0";
             Operation = "*";
@@ -290,6 +387,7 @@ namespace KENKO_KK_100B
             Result = (Math.Sqrt(FirstNumber));
             textBox1.Text = Convert.ToString(Result);
             FirstNumber = Result;
+            label10.Visible = false;
 
         }
 
@@ -298,6 +396,7 @@ namespace KENKO_KK_100B
             FirstNumber = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "0";
             Operation = "/";
+            label10.Visible = false;
         }
 
         private void button26_Click(object sender, EventArgs e)
@@ -305,11 +404,31 @@ namespace KENKO_KK_100B
             FirstNumber = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "0";
             Operation = "-";
+            label10.Visible = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            label10.Visible = false;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Convert.ToString(MRC);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            Mp = Convert.ToDouble(textBox1.Text);
+            MRC += Mp;
+            label10.Visible = true;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Convert.ToString(GT);
         }
     }
 }
