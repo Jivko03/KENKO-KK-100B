@@ -1,3 +1,4 @@
+using System.Web;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace KENKO_KK_100B
@@ -25,9 +26,9 @@ namespace KENKO_KK_100B
 
         private void button18_Click(object sender, EventArgs e)
         {
-            
+
             label10.Visible = false;
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 if (textBox1.Text.Contains(".") && textBox1.Text != null)
@@ -61,8 +62,8 @@ namespace KENKO_KK_100B
         private void button17_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 //  while (calulatorIsON == true)
                 // {
@@ -100,8 +101,8 @@ namespace KENKO_KK_100B
         private void button0_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 // while (calulatorIsON == true)
@@ -120,9 +121,9 @@ namespace KENKO_KK_100B
 
         private void button13_Click(object sender, EventArgs e)
         {
-            
+
             label10.Visible = false;
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 //while (calulatorIsON == true)
                 // {
@@ -141,8 +142,8 @@ namespace KENKO_KK_100B
         private void button14_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 // while (calulatorIsON == true)
@@ -162,8 +163,8 @@ namespace KENKO_KK_100B
         private void button15_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 //while (calulatorIsON == true)
@@ -183,8 +184,8 @@ namespace KENKO_KK_100B
         private void button10_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 // while (calulatorIsON == true)
@@ -204,8 +205,8 @@ namespace KENKO_KK_100B
         private void button11_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 // while (calulatorIsON == true)
@@ -225,8 +226,8 @@ namespace KENKO_KK_100B
         private void button12_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 //while (calulatorIsON == true)
@@ -246,8 +247,8 @@ namespace KENKO_KK_100B
         private void button7_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 //while (calulatorIsON == true)
@@ -267,8 +268,8 @@ namespace KENKO_KK_100B
         private void button8_Click(object sender, EventArgs e)
         {
             label10.Visible = false;
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 //while (calulatorIsON == true)
@@ -287,8 +288,8 @@ namespace KENKO_KK_100B
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
-            if (textBox1.Text.Length < 13 && calulatorIsON == true)
+
+            if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
                 //while (calulatorIsON == true)
@@ -338,44 +339,85 @@ namespace KENKO_KK_100B
                 //{
                 label10.Visible = false;
                 double SecondNumber;
-                double Result;
+                string Result;
+                double placeholder;
                 SecondNumber = Convert.ToDouble(textBox1.Text);
                 if (Operation == "+")
                 {
-                    Result = (FirstNumber + SecondNumber);
-                    GT += Result;
-                    textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Math.Round(Result, 12);
+                    placeholder = (FirstNumber + SecondNumber);
+                    Result = Convert.ToString(placeholder);
+                    GT += Convert.ToDouble(Result);
+                    if (Result.Length > 12)
+                    {
+                        textBox1.Text = Result.Substring(0, 12);
+                    }
+                    else
+                    {
+                        textBox1.Text = Result;
+                    }
+                    FirstNumber = placeholder;
 
                 }
                 // Similar code for subtraction, multiplication, and divisio
                 if (Operation == "*")
                 {
-                    Result = Math.Round(FirstNumber * SecondNumber, 12);
-                    GT += Result;
-                    textBox1.Text = Convert.ToString(Math.Round(Result, 12));
-                    FirstNumber = Result;
+                    placeholder = (FirstNumber * SecondNumber);
+                    Result = Convert.ToString(placeholder);
+                    GT += Convert.ToDouble(Result);
+                    if (Result.Length > 12)
+                    {
+                        textBox1.Text = Result.Substring(0, 12);
+                    }
+                    else
+                    {
+                        textBox1.Text = Result;
+                    }
+                    FirstNumber = placeholder;
                 }
                 if (Operation == "%")
                 {
-                    Result = (FirstNumber % SecondNumber);
-                    GT += Result;
-                    textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Math.Round(Result, 12);
+                    placeholder = (FirstNumber % SecondNumber);
+                    Result = Convert.ToString(placeholder);
+                    GT += Convert.ToDouble(Result);
+                    if (Result.Length > 12)
+                    {
+                        textBox1.Text = Result.Substring(0, 12);
+                    }
+                    else
+                    {
+                        textBox1.Text = Result;
+                    }
+                    FirstNumber = placeholder;
                 }
                 if (Operation == "/")
                 {
-                    Result = (FirstNumber / SecondNumber);
-                    GT += Result;
-                    textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Math.Round(Result, 12);
+                    placeholder = (FirstNumber / SecondNumber);
+                    Result = Convert.ToString(placeholder);
+                    GT += Convert.ToDouble(Result);
+                    if (Result.Length > 12)
+                    {
+                        textBox1.Text = Result.Substring(0, 12);
+                    }
+                    else
+                    {
+                        textBox1.Text = Result;
+                    }
+                    FirstNumber = placeholder;
                 }
                 if (Operation == "-")
                 {
-                    Result = (FirstNumber - SecondNumber);
-                    GT += Result;
-                    textBox1.Text = Convert.ToString(Result);
-                    FirstNumber = Math.Round(Result, 12);
+                    placeholder = (FirstNumber - SecondNumber);
+                    Result = Convert.ToString(placeholder);
+                    GT += Convert.ToDouble(Result);
+                    if (Result.Length > 12)
+                    {
+                        textBox1.Text = Result.Substring(0, 12);
+                    }
+                    else
+                    {
+                        textBox1.Text = Result;
+                    }
+                    FirstNumber = placeholder;
                 }
             }
             //}
@@ -396,7 +438,7 @@ namespace KENKO_KK_100B
             label10.Visible = false;
             if (calulatorIsON == true)
             {
-                
+
                 FirstNumber = Convert.ToDouble(textBox1.Text);
                 textBox1.Text = "0";
                 Operation = "*";
@@ -419,10 +461,18 @@ namespace KENKO_KK_100B
             {
                 FirstNumber = Convert.ToDouble(textBox1.Text);
                 double Result;
-                Result = (Math.Sqrt(FirstNumber));
-                textBox1.Text = Convert.ToString(Result);
+                Result = Math.Sqrt(FirstNumber);
+                string squrt = Convert.ToString(Result);
+                if (squrt.Length > 13)
+                {
+                    textBox1.Text = squrt.Substring(0, 13);
+                }
+                else
+                {
+                    textBox1.Text = squrt;
+                }
                 FirstNumber = Result;
-                GT += Result;
+                GT += Math.Round(Result, 12);
             }
             label10.Visible = false;
 
@@ -463,7 +513,15 @@ namespace KENKO_KK_100B
         {
             if (calulatorIsON == true)
             {
-                textBox1.Text = Convert.ToString(MRC);
+                string mrc = Convert.ToString(MRC);
+                if (mrc.Length > 12)
+                {
+                    textBox1.Text = mrc.Substring(0, 12);
+                }
+                else
+                {
+                    textBox1.Text = mrc;
+                }
             }
         }
 
@@ -481,8 +539,21 @@ namespace KENKO_KK_100B
         {
             if (calulatorIsON == true)
             {
-                textBox1.Text = Convert.ToString(GT);
+                string gt = Convert.ToString(GT);
+                if (gt.Length > 12)
+                {
+                    textBox1.Text = gt.Substring(0, 12);
+                }
+                else
+                {
+                    textBox1.Text = gt;
+                }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
