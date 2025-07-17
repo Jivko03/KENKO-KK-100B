@@ -453,7 +453,6 @@
             textBox1.ReadOnly = true;
             textBox1.Size = new Size(482, 93);
             textBox1.TabIndex = 27;
-            textBox1.Text = "0";
             textBox1.TextAlign = HorizontalAlignment.Right;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
