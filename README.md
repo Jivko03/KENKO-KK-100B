@@ -2,3 +2,4 @@
 Digital version of the physical calculator.
 Calculator is almost 1:1 replica of the real thing.
 It's totaly useless :)
+trying to eneter new values when you're looking at the GT(grand total) or the MRC(Memory) doesn't work.
