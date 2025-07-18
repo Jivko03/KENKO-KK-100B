@@ -73,6 +73,7 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
+            button1.FlatAppearance.BorderColor = Color.Silver;
             button1.Font = new Font("Segoe UI", 9.75F);
             button1.Location = new Point(254, 258);
             button1.Margin = new Padding(3, 2, 3, 2);
@@ -86,6 +87,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.ActiveCaption;
+            button2.FlatAppearance.BorderColor = Color.Silver;
             button2.Font = new Font("Segoe UI", 9.75F);
             button2.ForeColor = SystemColors.ActiveCaptionText;
             button2.Location = new Point(362, 258);
@@ -100,6 +102,7 @@
             // button3
             // 
             button3.BackColor = SystemColors.ActiveCaption;
+            button3.FlatAppearance.BorderColor = Color.Silver;
             button3.Font = new Font("Segoe UI", 9.75F);
             button3.ForeColor = SystemColors.ActiveCaptionText;
             button3.Location = new Point(463, 258);
@@ -114,6 +117,7 @@
             // button4
             // 
             button4.BackColor = SystemColors.ActiveCaption;
+            button4.FlatAppearance.BorderColor = Color.Silver;
             button4.Font = new Font("Segoe UI", 20.25F);
             button4.Location = new Point(35, 304);
             button4.Margin = new Padding(3, 2, 3, 2);
@@ -127,6 +131,7 @@
             // button5
             // 
             button5.BackColor = SystemColors.ActiveCaption;
+            button5.FlatAppearance.BorderColor = Color.Silver;
             button5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button5.Location = new Point(144, 304);
             button5.Margin = new Padding(3, 2, 3, 2);
@@ -140,6 +145,7 @@
             // button6
             // 
             button6.BackColor = SystemColors.ActiveCaption;
+            button6.FlatAppearance.BorderColor = Color.Silver;
             button6.Font = new Font("Segoe UI", 20.25F);
             button6.Location = new Point(254, 304);
             button6.Margin = new Padding(3, 2, 3, 2);
@@ -153,6 +159,7 @@
             // button7
             // 
             button7.BackColor = Color.DimGray;
+            button7.FlatAppearance.BorderColor = Color.Silver;
             button7.Font = new Font("Segoe UI", 20.25F);
             button7.ForeColor = SystemColors.ButtonHighlight;
             button7.Location = new Point(35, 356);
@@ -167,6 +174,7 @@
             // button8
             // 
             button8.BackColor = Color.DimGray;
+            button8.FlatAppearance.BorderColor = Color.Silver;
             button8.Font = new Font("Segoe UI", 20.25F);
             button8.ForeColor = SystemColors.ButtonHighlight;
             button8.Location = new Point(144, 356);
@@ -181,6 +189,7 @@
             // button9
             // 
             button9.BackColor = Color.DimGray;
+            button9.FlatAppearance.BorderColor = Color.Silver;
             button9.Font = new Font("Segoe UI", 20.25F);
             button9.ForeColor = SystemColors.ButtonHighlight;
             button9.Location = new Point(254, 356);
@@ -195,9 +204,10 @@
             // button10
             // 
             button10.BackColor = Color.DimGray;
+            button10.FlatAppearance.BorderColor = Color.Silver;
             button10.Font = new Font("Segoe UI", 20.25F);
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(35, 412);
+            button10.Location = new Point(35, 411);
             button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
             button10.Size = new Size(69, 49);
@@ -209,6 +219,7 @@
             // button11
             // 
             button11.BackColor = Color.DimGray;
+            button11.FlatAppearance.BorderColor = Color.Silver;
             button11.Font = new Font("Segoe UI", 20.25F);
             button11.ForeColor = SystemColors.ButtonHighlight;
             button11.Location = new Point(144, 412);
@@ -223,6 +234,7 @@
             // button12
             // 
             button12.BackColor = Color.DimGray;
+            button12.FlatAppearance.BorderColor = Color.Silver;
             button12.Font = new Font("Segoe UI", 20.25F);
             button12.ForeColor = SystemColors.ButtonHighlight;
             button12.Location = new Point(254, 412);
@@ -237,6 +249,7 @@
             // button13
             // 
             button13.BackColor = Color.DimGray;
+            button13.FlatAppearance.BorderColor = Color.Silver;
             button13.Font = new Font("Segoe UI", 20.25F);
             button13.ForeColor = SystemColors.ButtonHighlight;
             button13.Location = new Point(35, 466);
@@ -251,6 +264,7 @@
             // button14
             // 
             button14.BackColor = Color.DimGray;
+            button14.FlatAppearance.BorderColor = Color.Silver;
             button14.Font = new Font("Segoe UI", 20.25F);
             button14.ForeColor = SystemColors.ButtonHighlight;
             button14.Location = new Point(144, 466);
@@ -265,6 +279,7 @@
             // button15
             // 
             button15.BackColor = Color.DimGray;
+            button15.FlatAppearance.BorderColor = Color.Silver;
             button15.Font = new Font("Segoe UI", 20.25F);
             button15.ForeColor = SystemColors.ButtonHighlight;
             button15.Location = new Point(254, 466);
@@ -279,6 +294,7 @@
             // button0
             // 
             button0.BackColor = Color.DimGray;
+            button0.FlatAppearance.BorderColor = Color.Silver;
             button0.Font = new Font("Segoe UI", 20.25F);
             button0.ForeColor = SystemColors.ButtonHighlight;
             button0.Location = new Point(35, 516);
@@ -293,6 +309,7 @@
             // button00
             // 
             button00.BackColor = Color.DimGray;
+            button00.FlatAppearance.BorderColor = Color.Silver;
             button00.Font = new Font("Segoe UI", 20.25F);
             button00.ForeColor = SystemColors.ButtonHighlight;
             button00.Location = new Point(144, 516);
@@ -307,6 +324,7 @@
             // buttondot
             // 
             buttondot.BackColor = Color.DimGray;
+            buttondot.FlatAppearance.BorderColor = Color.Silver;
             buttondot.Font = new Font("Segoe UI", 20.25F);
             buttondot.ForeColor = SystemColors.ButtonHighlight;
             buttondot.Location = new Point(254, 516);
@@ -321,6 +339,7 @@
             // button19
             // 
             button19.BackColor = SystemColors.ActiveCaption;
+            button19.FlatAppearance.BorderColor = Color.Silver;
             button19.Font = new Font("Segoe UI", 20.25F);
             button19.ForeColor = SystemColors.ActiveCaptionText;
             button19.Location = new Point(362, 304);
@@ -335,6 +354,7 @@
             // button20
             // 
             button20.BackColor = SystemColors.ActiveCaption;
+            button20.FlatAppearance.BorderColor = Color.Silver;
             button20.Font = new Font("Segoe UI", 20.25F);
             button20.ForeColor = SystemColors.ActiveCaptionText;
             button20.Location = new Point(463, 304);
@@ -349,6 +369,7 @@
             // button21
             // 
             button21.BackColor = SystemColors.ActiveCaption;
+            button21.FlatAppearance.BorderColor = Color.Silver;
             button21.Font = new Font("Segoe UI", 20.25F);
             button21.ForeColor = SystemColors.ActiveCaptionText;
             button21.Location = new Point(362, 356);
@@ -363,6 +384,7 @@
             // button22
             // 
             button22.BackColor = SystemColors.ActiveCaption;
+            button22.FlatAppearance.BorderColor = Color.Silver;
             button22.Font = new Font("Segoe UI", 20.25F);
             button22.ForeColor = SystemColors.ActiveCaptionText;
             button22.Location = new Point(463, 356);
@@ -377,6 +399,7 @@
             // button23
             // 
             button23.BackColor = SystemColors.ActiveCaption;
+            button23.FlatAppearance.BorderColor = Color.Silver;
             button23.Font = new Font("Segoe UI", 20.25F);
             button23.ForeColor = SystemColors.ActiveCaptionText;
             button23.Location = new Point(362, 409);
@@ -391,6 +414,7 @@
             // button24
             // 
             button24.BackColor = SystemColors.ActiveCaption;
+            button24.FlatAppearance.BorderColor = Color.Silver;
             button24.Font = new Font("Segoe UI", 20.25F);
             button24.ForeColor = SystemColors.ActiveCaptionText;
             button24.Location = new Point(463, 409);
@@ -405,6 +429,7 @@
             // button25
             // 
             button25.BackColor = SystemColors.ActiveCaption;
+            button25.FlatAppearance.BorderColor = Color.Silver;
             button25.Font = new Font("Segoe UI", 20.25F);
             button25.ForeColor = SystemColors.ActiveCaptionText;
             button25.Location = new Point(362, 466);
@@ -419,6 +444,7 @@
             // button26
             // 
             button26.BackColor = SystemColors.ActiveCaption;
+            button26.FlatAppearance.BorderColor = Color.Silver;
             button26.Font = new Font("Segoe UI", 20.25F);
             button26.ForeColor = SystemColors.ActiveCaptionText;
             button26.Location = new Point(463, 462);
@@ -433,6 +459,7 @@
             // button27
             // 
             button27.BackColor = SystemColors.ActiveCaption;
+            button27.FlatAppearance.BorderColor = Color.Silver;
             button27.Font = new Font("Segoe UI", 20.25F);
             button27.ForeColor = SystemColors.ActiveCaptionText;
             button27.Location = new Point(463, 516);

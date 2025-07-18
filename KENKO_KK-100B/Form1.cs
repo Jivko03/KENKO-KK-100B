@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using System.Web;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -18,6 +19,9 @@ namespace KENKO_KK_100B
         double Mm;
         string memory;
         double GT;
+        bool lookingAtGT = false;
+        bool lookingAtMRC = false;
+        bool gotAResult = false;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -31,9 +35,12 @@ namespace KENKO_KK_100B
             if (textBox1.Text.Length < 12 && calulatorIsON == true)
             {
                 label10.Visible = false;
-                if (textBox1.Text.Contains(".") && textBox1.Text != null)
+                if (textBox1.Text.Contains(".") && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     return;
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -54,6 +61,9 @@ namespace KENKO_KK_100B
                 //while (calulatorIsON == true)
                 // {
                 textBox1.Text = "0";
+                lookingAtGT = false;
+                lookingAtMRC = false;
+                gotAResult = false;
             }
             label10.Visible = false;
             // }
@@ -67,9 +77,12 @@ namespace KENKO_KK_100B
             {
                 //  while (calulatorIsON == true)
                 // {
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
                     textBox1.Text = "0";
+                    gotAResult = false;
                 }
                 else
                 {
@@ -91,6 +104,9 @@ namespace KENKO_KK_100B
             Mm = 0;
             memory = "";
             GT = 0;
+            lookingAtGT = false;
+            lookingAtMRC = false;
+            gotAResult = false;
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -107,9 +123,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 // while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "0";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -127,9 +146,12 @@ namespace KENKO_KK_100B
             {
                 //while (calulatorIsON == true)
                 // {
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "1";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -148,9 +170,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 // while (calulatorIsON == true)
                 // {
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "2";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -169,9 +194,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 //while (calulatorIsON == true)
                 // {
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "3";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -190,9 +218,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 // while (calulatorIsON == true)
                 // {
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "4";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -211,9 +242,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 // while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "5";
+                    lookingAtGT = false;
+                    gotAResult = false;
+                    lookingAtMRC = false;
                 }
                 else
                 {
@@ -232,9 +266,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 //while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "6";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -253,9 +290,13 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 //while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "7";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -274,9 +315,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 //while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "8";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -294,9 +338,12 @@ namespace KENKO_KK_100B
                 label10.Visible = false;
                 //while (calulatorIsON == true)
                 //{
-                if (textBox1.Text == "0" && textBox1.Text != null)
+                if (textBox1.Text == "0" && textBox1.Text != null || lookingAtGT == true || lookingAtMRC == true || gotAResult == true)
                 {
                     textBox1.Text = "9";
+                    lookingAtGT = false;
+                    lookingAtMRC = false;
+                    gotAResult = false;
                 }
                 else
                 {
@@ -318,6 +365,9 @@ namespace KENKO_KK_100B
             Mm = 0;
             memory = "";
             GT = 0;
+            lookingAtGT = false;
+            lookingAtMRC = false;
+            gotAResult = false;
         }
 
         private void button25_Click(object sender, EventArgs e)
@@ -335,11 +385,11 @@ namespace KENKO_KK_100B
         {
             if (calulatorIsON == true)
             {
-                //while (calulatorIsON == true)
-                //{
+                
                 label10.Visible = false;
                 double SecondNumber;
                 string Result;
+                gotAResult = true;
                 double placeholder;
                 SecondNumber = Convert.ToDouble(textBox1.Text);
                 if (Operation == "+")
@@ -513,6 +563,7 @@ namespace KENKO_KK_100B
         {
             if (calulatorIsON == true)
             {
+                lookingAtMRC = true;
                 string mrc = Convert.ToString(MRC);
                 if (mrc.Length > 12)
                 {
@@ -539,6 +590,7 @@ namespace KENKO_KK_100B
         {
             if (calulatorIsON == true)
             {
+                lookingAtGT = true;
                 string gt = Convert.ToString(GT);
                 if (gt.Length > 12)
                 {
